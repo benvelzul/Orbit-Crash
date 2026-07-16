@@ -1,18 +1,18 @@
 [gd_scene format=3 uid="uid://b53xaths23e4a"]
 
 [ext_resource type="PackedScene" uid="uid://dcfq2vxtu8ig1" path="res://src/entities/ship.tscn" id="1_alckn"]
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_alckn"]
+[ext_resource type="Texture2D" uid="uid://28tyjd6wlvht" path="res://assets/BG.png" id="1_icct6"]
 
 [node name="Node2D" type="Node2D" unique_id=1006098720]
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=964288369]
-offset_left = 2.0
-offset_top = 8.0
-offset_right = 1148.0
-offset_bottom = 674.0
-texture = SubResource("PlaceholderTexture2D_alckn")
-stretch_mode = 1
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=253250395]
+repeat_size = Vector2(100, 100)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1048672838]
+texture_repeat = 2
+texture = ExtResource("1_icct6")
+region_enabled = true
+region_rect = Rect2(0, 0, 4000, 4000)
 
 [node name="Ship" parent="." unique_id=1168595321 instance=ExtResource("1_alckn")]
 position = Vector2(561, 340)
