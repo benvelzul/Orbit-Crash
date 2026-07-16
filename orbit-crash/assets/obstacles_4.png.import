@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bba74ixxoq5fq"
-path="res://.godot/imported/ship_0.png-c5481ebb1e0d813c43b289f865ce3047.ctex"
+uid="uid://bronn1dun1uel"
+path="res://.godot/imported/obstacles_4.png-a682070591ca8f8d573c2cd4bf6a9024.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/entities/ship_0.png"
-dest_files=["res://.godot/imported/ship_0.png-c5481ebb1e0d813c43b289f865ce3047.ctex"]
+source_file="res://assets/obstacles_4.png"
+dest_files=["res://.godot/imported/obstacles_4.png-a682070591ca8f8d573c2cd4bf6a9024.ctex"]
 
 [params]
 
