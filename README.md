@@ -7,6 +7,7 @@ Trapped in the gravitational pull of a collapsing star, your only hope is to man
 * Hold `Spacebar`: Fire thrusters to move outward, away from the star.
 
 * Release `Spacebar`: Let gravity pull you inward, toward the event horizon.
+* Use your mouse to point the ship towards the direction you want 
 
 ## Features
 * One-Button Mastery: Deep, physics-based movement mechanics driven by a single input.
@@ -15,18 +16,10 @@ Trapped in the gravitational pull of a collapsing star, your only hope is to man
 
 * Gravity Pulses: Adapt to sudden solar flares that warp the gravitational field and throw off your rhythm.
 
-* High-Score Chasing: Risk going closer to the star to collect space dust and maximize your score multiplier.
+## Where to play
+You can play the game in my Itch.io page.
 
-## Installation & Setup
-1. Clone the repository:
-    ```Bash
-    git clone https://github.com/yourusername/orbit-crash.git
-    ```
-2. Navigate to the project directory:
-    ``` Bash
-    cd orbit-crash
-    ```
-3. Run the game: 
+https://benvelzul.itch.io/orbit-crash 
 
 ## Roadmap / Future Additions
 * [ ] Rhythm Mode: Obstacles pulse and spawn to the beat of a synthwave soundtrack.
@@ -34,3 +27,7 @@ Trapped in the gravitational pull of a collapsing star, your only hope is to man
 * [ ] Skins & Customization: Unlock new ship trails using points earned during runs.
 
 * [ ] Leaderboards: Global online high-score tracking.
+
+* [ ] Stardust: A score multiplier to make the game more engaging
+
+* [ ] Make an intro and multiple levels/maps
