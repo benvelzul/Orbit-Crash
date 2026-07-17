@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b640j78mc2xjc"]
+
+[ext_resource type="Script" uid="uid://d3ew7qeleeqim" path="res://src/entities/obstacles/asteroid.gd" id="1_5teqh"]
+[ext_resource type="Texture2D" uid="uid://dkp2iae3obo3q" path="res://assets/obstacles/obstacles_0.png" id="2_bn1ca"]
+[ext_resource type="Texture2D" uid="uid://cj3a12ewopnfs" path="res://assets/obstacles/obstacles_1.png" id="3_r6ngw"]
+[ext_resource type="Texture2D" uid="uid://driwcs35o7uk0" path="res://assets/obstacles/obstacles_3.png" id="4_l08xm"]
+[ext_resource type="Texture2D" uid="uid://bronn1dun1uel" path="res://assets/obstacles/obstacles_4.png" id="5_p802u"]
+[ext_resource type="Texture2D" uid="uid://ccxysbq3gfov0" path="res://assets/obstacles/obstacles_5.png" id="6_kfh21"]
+[ext_resource type="Texture2D" uid="uid://c6xd27wa1h3tf" path="res://assets/obstacles/obstacles_6.png" id="7_typvp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c8wqn"]
+radius = 45.0
+height = 96.0
+
+[node name="Asteroid" type="RigidBody2D" unique_id=1821141384]
+gravity_scale = 0.0
+script = ExtResource("1_5teqh")
+textures = Array[Texture2D]([ExtResource("2_bn1ca"), ExtResource("3_r6ngw"), ExtResource("4_l08xm"), ExtResource("5_p802u"), ExtResource("6_kfh21"), ExtResource("7_typvp")])
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1478862400]
+texture = ExtResource("3_r6ngw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1903558737]
+shape = SubResource("CapsuleShape2D_c8wqn")

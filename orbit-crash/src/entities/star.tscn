@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cjpooy24bydc3"]
+
+[ext_resource type="Texture2D" uid="uid://do4kifo47om20" path="res://assets/New Piskel (1).png" id="1_lm5fi"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lm5fi"]
+radius = 50.0
+height = 198.0
+
+[node name="Star" type="Area2D" unique_id=84316890]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=33431194]
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_lm5fi")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2053021055]
+texture = ExtResource("1_lm5fi")

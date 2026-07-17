@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://dcfq2vxtu8ig1"]
+
+[ext_resource type="Script" uid="uid://j7hvtc4cavvm" path="res://src/entities/player/ship.gd" id="1_rqhp2"]
+[ext_resource type="Texture2D" uid="uid://cishmk4xbvdqy" path="res://assets/ship_2.png" id="1_s7fcy"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mewa2"]
+load_path = "res://.godot/imported/trail.png-64e5a06be69644d3134ab74f3d4baced.ctex"
+
+[sub_resource type="Curve" id="Curve_mewa2"]
+_data = [Vector2(0.32432434, 0.3370787), 0.0, 0.0, 0, 0]
+point_count = 1
+
+[sub_resource type="CurveTexture" id="CurveTexture_le13c"]
+curve = SubResource("Curve_mewa2")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_le13c"]
+particle_flag_disable_z = true
+direction = Vector3(0, 0, 0)
+spread = 23.824
+initial_velocity_min = 145.16
+initial_velocity_max = 252.68999
+gravity = Vector3(0, 0, 0)
+scale_min = 0.19999999
+scale_max = 0.29999998
+scale_curve = SubResource("CurveTexture_le13c")
+
+[node name="Player" type="CharacterBody2D" unique_id=1168595321]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_rqhp2")
+
+[node name="TrailParticles" type="GPUParticles2D" parent="." unique_id=129384025]
+position = Vector2(-1, 1)
+rotation = -3.1350753
+emitting = false
+amount = 15
+texture = SubResource("CompressedTexture2D_mewa2")
+lifetime = 0.31
+randomness = 0.1
+visibility_rect = Rect2(-100, -100, 10, 10)
+trail_enabled = true
+trail_lifetime = 0.5
+trail_sections = 10
+process_material = SubResource("ParticleProcessMaterial_le13c")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1818387049]
+rotation = 1.5707964
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Hitbox" unique_id=842053840]
+polygon = PackedVector2Array(0, -37, 21, -21, 35, 27, 26, 36, 0, 32, -26, 36, -34, 28, -21, -23)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=625109314]
+rotation = 1.5707964
+texture = ExtResource("1_s7fcy")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1417564310]
+position_smoothing_enabled = true
+position_smoothing_speed = 3.5
+drag_bottom_margin = 1.0
+editor_draw_drag_margin = true
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
