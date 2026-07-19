@@ -3,9 +3,11 @@ A physics survival game controlled by one key.
 More like a space survival game. 
 
 ## Controls
-* Hold `Spacebar`: Fire thrusters to move towards the direction facing.
+* Hold `Spacebar`: Fire thrusters to move towards the direction facing, and shoot lasers to destry the space debris in front of you (it takes 3 hits to destroy it) .
 
-* Release `Spacebar`: Let gravity pull you inward (to the black hole)
+* Release `Spacebar`: Let gravity pull you inward (to the black hole).
+
+* Point the mouse towards the direction you want to move. 
 
 ## Features
 * One-Button: physics-based movement.
