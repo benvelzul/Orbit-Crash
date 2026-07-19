@@ -1,20 +1,18 @@
 # Orbit Crash
-A tense, physics-based arcade survival game controlled entirely by a single key.
-
-Trapped in the gravitational pull of a collapsing star, your only hope is to manage your orbit, dodge incoming space debris, and survive as long as possible. Easy to learn, brutal to master.
+A physics survival game controlled by one key. 
+More like a space survival game. 
 
 ## Controls
-* Hold `Spacebar`: Fire thrusters to move outward, away from the star.
+* Hold `Spacebar`: Fire thrusters to move towards the direction facing, and shoot lasers to destry the space debris in front of you (it takes 3 hits to destroy it) .
 
-* Release `Spacebar`: Let gravity pull you inward, toward the event horizon.
-* Use your mouse to point the ship towards the direction you want 
+* Release `Spacebar`: Let gravity pull you inward (to the black hole).
+
+* Point the mouse towards the direction you want to move. 
 
 ## Features
-* One-Button Mastery: Deep, physics-based movement mechanics driven by a single input.
+* One-Button: physics-based movement.
 
-* Dynamic Obstacles: Dodge asteroids and rogue drones orbiting at different speeds and in opposite directions.
-
-* Gravity Pulses: Adapt to sudden solar flares that warp the gravitational field and throw off your rhythm.
+* Dynamic Obstacles: Dodge asteroids and other space debris moving at different speeds and shapes
 
 ## Where to play
 You can play the game in my Itch.io page.
@@ -22,9 +20,8 @@ You can play the game in my Itch.io page.
 https://benvelzul.itch.io/orbit-crash 
 
 ## Roadmap / Future Additions
-* [ ] Rhythm Mode: Obstacles pulse and spawn to the beat of a synthwave soundtrack.
 
-* [ ] Skins & Customization: Unlock new ship trails using points earned during runs.
+* [ ] Skins & Customization: Unlock new ship trails or ships using points earned during runs.
 
 * [ ] Leaderboards: Global online high-score tracking.
 
