@@ -12,8 +12,7 @@
 radius = 45.0
 height = 96.0
 
-[node name="Asteroid" type="RigidBody2D" unique_id=1821141384]
-gravity_scale = 0.0
+[node name="Asteroid" type="RigidBody2D" unique_id=1821141384 groups=["asteroids"]]
 script = ExtResource("1_5teqh")
 textures = Array[Texture2D]([ExtResource("2_bn1ca"), ExtResource("3_r6ngw"), ExtResource("4_l08xm"), ExtResource("5_p802u"), ExtResource("6_kfh21"), ExtResource("7_typvp")])
 

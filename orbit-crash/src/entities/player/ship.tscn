@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://j7hvtc4cavvm" path="res://src/entities/player/ship.gd" id="1_rqhp2"]
 [ext_resource type="Texture2D" uid="uid://cishmk4xbvdqy" path="res://assets/ship_2.png" id="1_s7fcy"]
+[ext_resource type="PackedScene" uid="uid://dwnu41tj1f52" path="res://src/entities/player/explosion.tscn" id="2_0ivne"]
+[ext_resource type="PackedScene" uid="uid://c0h0lbucgrm5o" path="res://src/entities/player/laser.tscn" id="3_8khok"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mewa2"]
 load_path = "res://.godot/imported/trail.png-64e5a06be69644d3134ab74f3d4baced.ctex"
@@ -28,6 +30,8 @@ scale_curve = SubResource("CurveTexture_le13c")
 collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_rqhp2")
+explosion_scene = ExtResource("2_0ivne")
+laser_scene = ExtResource("3_8khok")
 
 [node name="TrailParticles" type="GPUParticles2D" parent="." unique_id=129384025]
 position = Vector2(-1, 1)
@@ -58,5 +62,8 @@ position_smoothing_enabled = true
 position_smoothing_speed = 3.5
 drag_bottom_margin = 1.0
 editor_draw_drag_margin = true
+
+[node name="Muzzle" type="Marker2D" parent="." unique_id=1686701326]
+position = Vector2(35, 0)
 
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

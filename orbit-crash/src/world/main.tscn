@@ -20,12 +20,12 @@ region_enabled = true
 region_rect = Rect2(0, 0, 4000, 4000)
 
 [node name="Star" parent="." unique_id=84316890 instance=ExtResource("2_7eti2")]
-position = Vector2(552.99994, 684)
+position = Vector2(574, 750)
 rotation = 0.24958208
 scale = Vector2(3.4555957, 3.2906723)
 
 [node name="Player" parent="." unique_id=1168595321 instance=ExtResource("1_alckn")]
-position = Vector2(565, 329)
+position = Vector2(565, 416)
 collision_mask = 2
 explosion_scene = ExtResource("3_5gjl3")
 
@@ -40,6 +40,21 @@ autostart = true
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=145652447]
 
+[node name="WarningLabel" type="Label" parent="UI" unique_id=571245873]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -106.75
+offset_right = 106.75
+offset_bottom = 89.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 24
+text = "Boost!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="ScoreLabel" type="Label" parent="UI" unique_id=1580129215]
 offset_left = 64.0
 offset_top = 46.0
@@ -50,9 +65,9 @@ text = "0m"
 vertical_alignment = 1
 
 [node name="HUD" parent="." unique_id=1298564319 instance=ExtResource("7_hoyc4")]
-offset_left = 553.0
-offset_top = 161.0
-offset_right = 553.0
-offset_bottom = 161.0
+offset_left = 562.0
+offset_top = 322.0
+offset_right = 562.0
+offset_bottom = 322.0
 
 [connection signal="timeout" from="AsteroidSpawner/Timer" to="AsteroidSpawner" method="_on_timer_timeout"]
